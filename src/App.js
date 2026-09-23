@@ -6,6 +6,7 @@ import Form from './components/Form/Form';
 import { FormDataProvider } from './globalState/FormDataContext';
 
 import SubmitSuccess from './components/Form/SubmitConfirmation/Success';
+import SubmitError from './components/Form/SubmitConfirmation/Error';
 
 function App() {
   const [isFormStarted, setIsFormStarted] = useState(true);
@@ -31,6 +32,10 @@ function App() {
             )}
 
             {formSubmitStatus && <SubmitSuccess />}
+
+            {formSubmitStatus === false && (
+              <SubmitError isRecoverLinkPressed={isRecoverLinkPressed} />
+            )}
           </FormDataProvider>
         )}
       </main>
