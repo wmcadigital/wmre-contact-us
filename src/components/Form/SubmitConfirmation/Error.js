@@ -19,18 +19,6 @@ function Error({ isRecoverLinkPressed }) {
             We have not saved your answers. When the service is available, you will have to start
             again.
           </p>
-          <p>
-            Contact the{' '}
-            <a
-              href="https://www.tfwm.org.uk/get-help/contact-us/?utm_source=service&utm_medium=errorpage&utm_campaign=wmre-contact-form"
-              title="Customer Services Team Contact Details"
-              target="_self"
-              className="wmre-link"
-            >
-              Customer Services team
-            </a>{' '}
-            if you continue to have problems.
-          </p>
         </div>
       </div>
     </div>

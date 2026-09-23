@@ -55,13 +55,16 @@ const Enquiry = (props) => {
 
 Enquiry.propTypes = {
   summary: PropTypes.string,
-  section: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
-  legend: PropTypes.string.isRequired,
+  section: PropTypes.string,
+  header: PropTypes.string,
+  legend: PropTypes.string,
 };
 
 Enquiry.defaultProps = {
   summary: '',
+  section: '',
+  header: '',
+  legend: '',
 };
 
 export default Enquiry;
