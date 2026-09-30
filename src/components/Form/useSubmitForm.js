@@ -36,11 +36,11 @@ const useSubmitForm = (setFormSubmitStatus) => {
       // Go hit the API with the data
       axios({
         method: 'post',
-        url: `${process.env.REACT_APP_API_HOST}/emails/api/email`,
+        url: `${process.env.REACT_APP_API_HOST}`,
         data: JSON.stringify({
           to: 3,
           body: JSON.stringify(dataToSend),
-          from: `${ContactEmail}`,
+          from: `donotreply@tfwm.org.uk`,
           subject: `WMRE Contact Form`,
           files: file,
           displayName: `${Firstname} ${LastName}`,

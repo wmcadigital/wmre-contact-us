@@ -64,12 +64,14 @@ const Contact = (props) => {
 
 Contact.propTypes = {
   summary: PropTypes.string,
-  section: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
+  section: PropTypes.string,
+  header: PropTypes.string,
 };
 
 Contact.defaultProps = {
   summary: '',
+  section: '',
+  header: '',
 };
 
 export default Contact;

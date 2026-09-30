@@ -1,6 +1,3 @@
-import React from 'react';
-import App from './App';
-
-test('renders learn react link', () => {
+test('renders simple arithmetic', () => {
   expect(1 + 1).toBe(2);
 });

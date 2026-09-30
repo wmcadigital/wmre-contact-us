@@ -62,12 +62,14 @@ const Name = (props) => {
 
 Name.propTypes = {
   summary: PropTypes.string,
-  section: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
+  section: PropTypes.string,
+  header: PropTypes.string,
 };
 
 Name.defaultProps = {
   summary: '',
+  section: '',
+  header: '',
 };
 
 export default Name;
